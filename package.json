@@ -1,0 +1,23 @@
+{
+  "name": "pagina-restaurante",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgustinItuarte/Pagina-Restaurante.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgustinItuarte/Pagina-Restaurante/issues"
+  },
+  "homepage": "https://github.com/AgustinItuarte/Pagina-Restaurante#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
