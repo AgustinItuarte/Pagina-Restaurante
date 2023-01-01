@@ -1,10 +1,45 @@
-body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
+* {
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
-#contenido {
+#contenido, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.pagina-principal {
     display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    background-image: url('./vinos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+button {
+    width: 150px;
+    height: 100%;
 }
