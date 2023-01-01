@@ -45,7 +45,7 @@ export default function paginaPrincipal() {
     header_tab2.textContent = 'Menu';
     header_tab3.textContent = 'Contacto';
     nombre.textContent = 'Bienvenidos';
-    bienvenida.innerHTML = '<h2>El Vino</h2> <br> El Restaurante La Perdiz nace a principios del año 2000 como un desafío de su propietario. Luego de haber estudiado y trabajado diez años fuera del país, aprendió que se puede lograr un buen servicio y mejor calidad sin tener que dañar el bolsillo del cliente.';
+    bienvenida.innerHTML = '<h2>El Vino</h2> <br> El Restaurante El Vino nace a principios del año 2000 como un desafío de su propietario. Luego de haber estudiado y trabajado diez años fuera del país, aprendió que se puede lograr un buen servicio y mejor calidad sin tener que dañar el bolsillo del cliente.';
     horarios.innerHTML = '<h2>Horarios</h2> <br> Domingo: 8am - 8pm <br> Lunes: 6am - 6pm <br> Lunes: 6am - 6pm <br> Martes: 6am - 6pm <br> Miercoles: 6am - 10pm <br> Jueves: 6am - 10pm <br> Viernes: 6am - 10pm <br> Viernes: 6am - 10pm'
     localizacion.innerHTML = '<h2>Localizacion</h2> <br> Guipúzcoa 350, Montevideo 11300 Uruguay'
     main_content.style.backgroundImage =  `url(${Icon})` ;
