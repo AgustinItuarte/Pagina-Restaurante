@@ -1,19 +1,23 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-#contenido, body {
+body {
     height: 100vh;
     width: 100vw;
 }
 
 .pagina-principal {
     display: grid;
-    grid-template-rows: 10% 80% 10%;
-    height: 100vh;
-    width: 100vw;
+    grid-template-rows: 4% 92% 4%;
 }
 
 .header {
@@ -21,22 +25,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    background-color: #6b7280;
 }
 
 .main-content {
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url('./vinos.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+}
+
+.cont-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1800px;
+    width: 50%;
+    padding: 50px;
+    background-color: #6b7280;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.cuadros-contenido {
+    height: fit-content;
+    width: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 15px solid #1e293b;
+    background-color: #475569;
 }
 
 .footer {
     height: 100%;
     width: 100%;
-    border: 1px solid black;
+    background-color: #6b7280;
 }
 
 button {

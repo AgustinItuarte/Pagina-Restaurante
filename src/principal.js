@@ -10,7 +10,12 @@ export default function paginaPrincipal() {
     const header_tab1 = document.createElement('button');
     const header_tab2 = document.createElement('button');
     const header_tab3 = document.createElement('button');
-    
+    const cont_main = document.createElement('div');
+    const nombre = document.createElement('h1')
+    const bienvenida = document.createElement('div')
+    const horarios = document.createElement('div')
+    const localizacion = document.createElement('div')
+
     contenedor.appendChild(pagina_principal);
     pagina_principal.appendChild(header);
     pagina_principal.appendChild(main_content);
@@ -18,12 +23,19 @@ export default function paginaPrincipal() {
     header.appendChild(header_tab1);
     header.appendChild(header_tab2);
     header.appendChild(header_tab3);
-    main_content.style.backgroundImage =  `url(${Icon})` ;
+    main_content.appendChild(cont_main);
+    cont_main.appendChild(nombre);
+    cont_main.appendChild(bienvenida);
+    cont_main.appendChild(horarios);
+    cont_main.appendChild(localizacion);
     
-
     pagina_principal.classList.add('pagina-principal');
     header.classList.add('header');
-    main_content.classList.add('main_content');
+    main_content.classList.add('main-content');
+    cont_main.classList.add('cont-main');
+    bienvenida.classList.add('cuadros-contenido');
+    horarios.classList.add('cuadros-contenido');
+    localizacion.classList.add('cuadros-contenido');
     footer.classList.add('footer');
     header_tab1.classList.add('btn-inicio');
     header_tab2.classList.add('btn-menu');
@@ -32,5 +44,10 @@ export default function paginaPrincipal() {
     header_tab1.textContent = 'Inicio';
     header_tab2.textContent = 'Menu';
     header_tab3.textContent = 'Contacto';
+    nombre.textContent = 'Bienvenidos';
+    bienvenida.innerHTML = '<h2>El Vino</h2> <br> El Restaurante La Perdiz nace a principios del año 2000 como un desafío de su propietario. Luego de haber estudiado y trabajado diez años fuera del país, aprendió que se puede lograr un buen servicio y mejor calidad sin tener que dañar el bolsillo del cliente.';
+    horarios.innerHTML = '<h2>Horarios</h2> <br> Domingo: 8am - 8pm <br> Lunes: 6am - 6pm <br> Lunes: 6am - 6pm <br> Martes: 6am - 6pm <br> Miercoles: 6am - 10pm <br> Jueves: 6am - 10pm <br> Viernes: 6am - 10pm <br> Viernes: 6am - 10pm'
+    localizacion.innerHTML = '<h2>Localizacion</h2> <br> Guipúzcoa 350, Montevideo 11300 Uruguay'
+    main_content.style.backgroundImage =  `url(${Icon})` ;
     
 }
