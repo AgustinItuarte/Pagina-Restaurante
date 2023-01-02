@@ -22,12 +22,12 @@ body {
     width: 100vw;
 }
 
-.pagina-principal {
+/* .pagina-principal {
     display: flex;
     flex-direction: column;
-}
+} */
 
-.header {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +51,16 @@ body {
     height: 100%;
     width: 100%;
     padding: 40px;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 3, 3, 0.1);
 }
 
 .bienvenida-box {
@@ -88,7 +98,7 @@ h2 {
     font-size: 1.1rem;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
