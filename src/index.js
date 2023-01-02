@@ -17,18 +17,26 @@ for (let i = 0; i < buttons.length; i++) {
 
         if (buttons[i].className === 'btn-inicio') {
 
+            btn_inicio.disabled = true;
+            btn_menu.disabled = false;
+
             contenido.remove();
             contenido = document.createElement('div');
             body.insertBefore(contenido, body.children[1])
             contenido.id = 'contenido';
+
             paginaPrincipal();
 
         } else if (buttons[i].className === 'btn-menu') {
 
+            btn_menu.disabled = true;
+            btn_inicio.disabled = false;
+
             contenido.remove();
             contenido = document.createElement('div');
             body.insertBefore(contenido, body.children[1])
             contenido.id = 'contenido';
+            
             menu();
 
         }
