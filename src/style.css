@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Lemon';
+    src: url('./19919.ttf');
+}
+
 html,
-body {
+body,
+button {
     max-width: 100%;
     overflow-x: hidden;
+    font-family: 'Lemon';
 }
 
 * {
@@ -16,8 +23,8 @@ body {
 }
 
 .pagina-principal {
-    display: grid;
-    grid-template-rows: 6% 88% 6%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -25,7 +32,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #7f1d1d;
+    box-shadow: 1px 1px 5px black inset;
     width: 100%;
+    height: 75px;
     gap: 20px;
 }
 
@@ -53,21 +62,39 @@ body {
     background-color: #7f1d1d;
     border-radius: 20px;
     gap: 30px;
+    box-shadow: 0px 0px 20px black
 }
 
 .cuadros-contenido {
     height: fit-content;
     width: 500px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     border: 15px solid #991b1b;
     background-color: #b91c1c;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 5px black
+}
+
+h2 {
+    font-size: 1.1rem;
 }
 
 .footer {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
     width: 100%;
     background-color: #7f1d1d;
+    box-shadow: 1px 1px 5px black inset;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
 }
 
 button {
@@ -75,9 +102,14 @@ button {
     height: 100%;
     background-color: #b91c1c;
     border: none;
+    box-shadow: 1px 1px 5px black inset;
 }
 
 button:hover {
     background-color:#991b1b;
     cursor: pointer;
+}
+
+button:active {
+    background-color: #dc2626;
 }

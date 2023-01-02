@@ -15,6 +15,9 @@ export default function paginaPrincipal() {
     const bienvenida = document.createElement('div')
     const horarios = document.createElement('div')
     const localizacion = document.createElement('div')
+    const ul_footer = document.createElement('ul')
+    const li1_footer = document.createElement('li')
+    const li2_footer = document.createElement('li')
 
     contenedor.appendChild(pagina_principal);
     pagina_principal.appendChild(header);
@@ -28,6 +31,9 @@ export default function paginaPrincipal() {
     cont_main.appendChild(bienvenida);
     cont_main.appendChild(horarios);
     cont_main.appendChild(localizacion);
+    footer.appendChild(ul_footer);
+    ul_footer.appendChild(li1_footer);
+    ul_footer.appendChild(li2_footer);
     
     pagina_principal.classList.add('pagina-principal');
     header.classList.add('header');
@@ -49,5 +55,6 @@ export default function paginaPrincipal() {
     horarios.innerHTML = '<h2>Horarios</h2> <br> Domingo: 8am - 8pm <br> Lunes: 6am - 6pm <br> Lunes: 6am - 6pm <br> Martes: 6am - 6pm <br> Miercoles: 6am - 10pm <br> Jueves: 6am - 10pm <br> Viernes: 6am - 10pm <br> Viernes: 6am - 10pm'
     localizacion.innerHTML = '<h2>Localizacion</h2> <br> Guipúzcoa 350, Montevideo 11300 Uruguay'
     main_content.style.backgroundImage =  `url(${Icon})` ;
-    
+    li1_footer.textContent = 'Creador de la Pagina: Agustin Ituarte'
+    li2_footer.textContent = 'Propietario del Fondo: stevepb'
 }
