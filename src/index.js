@@ -1,5 +1,6 @@
 import paginaPrincipal from "./principal";
 import menu from "./menu";
+import contacto from "./contacto";
 import './style.css';
 
 paginaPrincipal();
@@ -19,6 +20,7 @@ for (let i = 0; i < buttons.length; i++) {
 
             btn_inicio.disabled = true;
             btn_menu.disabled = false;
+            btn_contacto.disabled = false;
 
             contenido.remove();
             contenido = document.createElement('div');
@@ -31,6 +33,7 @@ for (let i = 0; i < buttons.length; i++) {
 
             btn_menu.disabled = true;
             btn_inicio.disabled = false;
+            btn_contacto.disabled = false;
 
             contenido.remove();
             contenido = document.createElement('div');
@@ -38,6 +41,19 @@ for (let i = 0; i < buttons.length; i++) {
             contenido.id = 'contenido';
             
             menu();
+
+        } else if (buttons[i].className === 'btn-contacto') {
+
+            btn_contacto.disabled = true;
+            btn_inicio.disabled = false;
+            btn_menu.disabled = false;
+
+            contenido.remove();
+            contenido = document.createElement('div');
+            body.insertBefore(contenido, body.children[1])
+            contenido.id = 'contenido';
+            
+            contacto();
 
         }
     })
